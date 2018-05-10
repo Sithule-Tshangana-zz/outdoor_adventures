@@ -1,0 +1,21 @@
+camping
+<iframe width="420" height="345" src="https://youtu.be/MDbkEYHInR0">
+</iframe>
+canoeing
+<iframe width="420" height="345" src="https://youtu.be/ZsrNErBvAdo">
+</iframe>
+backpack
+<iframe width="420" height="345" src="https://youtu.be/S9M94RxbdK0">
+</iframe>
+hiking
+<iframe width="420" height="345" src="https://youtu.be/TDqXC1l6qVU">
+</iframe>
+climbing
+<iframe width="420" height="345" src="https://youtu.be/T1QCCsUpTr0">
+</iframe>
+fishing
+<iframe width="420" height="345" src="https://youtu.be/0-huSwTdDHA">
+</iframe>
+hunting
+<iframe width="420" height="345" src="https://youtu.be/wu36VdRyogE">
+</iframe>
