@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <!-- link to my stylesheet -->
+    <link rel="stylesheet" href="css/form_styles.css">
+    <!-- linking my responsive media quaries -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+  </head>
+  <body>
+    <!-- all of my pages have the same header -->
+    <header class="pageHeader">
+        <center><img src="assets/images/123.png" width="300px" alt="logo"></center>
+    </header>
+    <!-- my container with my contact form -->
+<div class="container">
+  <form action="action_page.php">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First Name*</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="firstname" required placeholder="Your name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25" >
+        <label for="lname">Last Name*</label>
+      </div>
+      <div class="col-75">
+        <input type="text" name="lastname" required placeholder="Your last name">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="email">Email*</label>
+      </div>
+      <div class="col-75">
+        <input name="text" value="" type="text"  type="email" id="emailAddress" required placeholder="Your email address">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Category*</label>
+      </div>
+      <div class="col-75">
+        <select name="Category" required placeholder="Please choose">
+            <option value=""></option>
+              <option value="Hiking">Hiking</option>
+                <option value="Camping">Camping</option>
+              <option value="Fishing,">Fishing,</option>
+            <option value="Rock climbing">Rock climbing</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Message</label>
+      </div>
+      <div class="col-75">
+        <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+  <!--a bit of javascript to remind user to complete form  -->
+  <script type="text/javascript">
+    alert('Please complete form!');
+  </script>
+  </body>
+</html>

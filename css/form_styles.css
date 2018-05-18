@@ -1,0 +1,70 @@
+ body{
+  background:url("background.jpg");
+  background-size: cover;}
+  /* universal selector for everything */
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background:url("gallery.png");
+  background:url("gallery.png")
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background:url("gallery.png");
+}
+.container {
+    border-radius: 5px;
+  background:url("gallery.png");
+    padding: 20px;
+}
+/* trying to align textarea from input */
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+/* trying to align textarea from input */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "" "" ;
+    display: table;
+    clear: both;
+}
+/* Medium devices (landscape tablets, 600px and up) */
+@media only screen and (min-width: 600px) {
+   body { width: 100%}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+   body { width: 100%}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+   body { width: 100%}

@@ -1,41 +1,83 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <title></title>
+    <!-- link to my stylesheet -->
+        <link rel="stylesheet" href="css/styles.css">
+        <!-- link to my responsive media quaries -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outdoor adventure</title>
   </head>
   <body>
-    <header>
-      <center> <img src="assets/images/logo...png" alt="logo"> </center>
+      <!-- all of my pages have the same header -->
+    <header class="pageHeader">
+      <center><img src="assets/images/123.png" width="300px" alt="logo"></center>
     </header>
-<nav>
-
-</nav>
-<section>
-  <article class="">
-<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-  </article>
-  <aside class="">
-
-  </aside>
-</section>
-<div class="">
-  <div class="">
-
-  </div>
-  <div class="">
-
-  </div>
-  <div class="">
-
-  </div>
-  <div class="">
-
-  </div>
-</div>
-<footer>
-</footer>
+      <!-- my container with my categories-->
+    <section class="container">
+      <figure class="hiking">
+        <a href="sections.html#hiking" target="_parent"><img src="assets/images/hiking2.jpg"     alt="Hiking"></a>
+            <figcaption>Hiking</figcaption>
+      </figure>
+      <figure class="camping">
+        <a href="sections.html#camping" target="_parent"><img src="assets/images/camp2.jpg"             alt="Camping"></a>
+            <figcaption>Camping</figcaption>
+      </figure>
+      <figure class="fishinng">
+            <a href="sections.html#fishing" target="_parent"><img src="assets/images/fishing3.jpg"         alt="Fishinng"></a>
+            <figcaption>Fishinng</figcaption>
+      </figure>
+      <figure class="climbing">
+            <a href="sections.html#climbing" target="_parent"><img src="assets/images/climbing2.jpg" alt="Rock climbing"> </a>
+            <figcaption>Rock climbing</figcaption>
+      </figure>
+    </section>
+    <!-- my nav -->
+    <div class="mainNav">
+      <nav>
+        <ul>
+          <li><a href="outdoor_adventures.html">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+              <a href="#">Hiking</a>
+            <a href="#">Fishinng</a>
+          <a href="#">Rock climbing</a>
+        <a href="#">Camping</a>
+    </div>
+      </li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+          <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+            </ul>
+              </nav>
+            </div>
+            <!--aside semantic with facts About cape town -->
+          <aside class="siteLinks">
+        <h4> <u>Fun Facts You Didn’t Know About Cape Town</u></h4>
+      <ol>
+    <li>Cape Town was appointed the best place in the world to visit by the New York Times in 2014.</li>
+  <li>The Cape Floral Kingdom claims nearly 7000 plants found nowhere else in the world.</li>
+      <li>Cape Town has the country’s highest number of homes valued at more than R20 million.</li>
+        <li>Afrikaans is the most widely spoken language in the Western Cape.</li>
+            <li>The Victoria & Alfred Waterfront in Cape Town is the most-visited destination in South Africa - ahead of Table Mountain</li>
+                  <li>Cape Town was founded in 1652 when Jan van Riebeeck of the Dutch East India Company based in The Netherlands arrived to set up a halfway point for ships travelling to the East.</li>
+                  <li>Cape Town’s climate is on par with California and the Mediterranean. The winter season starts in May and ends in September and is generally a wet and windy season. Summer starts from November to March.</li>
+              <li>Cape Town’s Castle of Good Hope is the oldest building in South Africa. It was built between 1666 and 1679 by the Dutch East India company.</li>
+            <li>Lion’s Head may have a big cat in it’s name, but it has not seen a lion for over 200 years. After once thriving in the area, the last lion was shot in 1802.</li>
+          <li>Simon’s Town is home to a thriving colony of Africa’s only penguin species, the Jackass Penguin.</li>
+        <li>ape Town was the first city outside Europe to get Blue Flag status due to its high water quality, fantastic facilities, safety and cleanliness.</li>
+        <li>Approximately 3.5-million people live in Cape Town, South Africa's second most-populated city.</li>
+      </ol>
+    </aside>
+<!-- my footer with contact details and address -->
+    <footer>
+        <a href="https://en-gb.facebook.com/login/"> <img src="assets/images/download.jpg" alt="facebook"> </a>
+            <address class="address">
+                20 Ventnor close <br> Kuilsriver <br>Cape Town <br> 7580
+            </address>
+          <div class="website">
+          www.outdooradventures.co.za
+          </div>
+    </footer>
   </body>
-</html>
+  </html>
