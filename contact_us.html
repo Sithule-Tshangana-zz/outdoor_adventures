@@ -10,9 +10,28 @@
   </head>
   <body>
     <!-- all of my pages have the same header -->
-    <header class="pageHeader">
-        <center><img src="assets/images/123.png" width="300px" alt="logo"></center>
+    <header class="page_header">
+        <center><img src="images/123.png" width="300px" alt="logo"></center>
     </header>
+    <!-- my nav -->
+    <div class="main_nav">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">Categories</a>
+                <div class="dropdown-content">
+              <a href="sections.html#hiking" target="_parent">Hiking</a>
+            <a href="sections.html#fishing">Fishinng</a>
+          <a href="sections.html#climbing">Rock climbing</a>
+        <a href="sections.html#camping">Camping</a>
+    </div>
+      </li>
+        <li><a href="gallery.html" target="_blank">Gallery</a></li>
+          <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+            </ul>
+              </nav>
+            </div>
     <!-- my container with my contact form -->
 <div class="container">
   <form action="action_page.php">
@@ -66,9 +85,15 @@
       <input type="submit" value="Submit">
     </div>
   </form>
-  <!--a bit of javascript to remind user to complete form  -->
-  <script type="text/javascript">
-    alert('Please complete form!');
-  </script>
+  <!-- my footer with contact details and address -->
+      <footer>
+          <a href="https://en-gb.facebook.com/login/"> <img src="images/download.jpg" alt="facebook"> </a>
+              <address class="address">
+                  20 Ventnor close <br> Kuilsriver <br>Cape Town <br> 7580
+              </address>
+            <div class="website">
+            www.outdooradventures.co.za
+            </div>
+      </footer>
   </body>
 </html>

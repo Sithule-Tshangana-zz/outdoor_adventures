@@ -4,54 +4,34 @@
     <meta charset="utf-8">
     <!-- linking my responsive media quaries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/section_styles.css">
     <title>Categories</title>
-    <!-- my gallery page has internal styling  -->
 
-    <style media="screen">
-    /* adding a background image to body */
-    body{
-      background:url("background.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;}
-      /* wrapper container with all my details in grids */
-      .wrapper{
-        display: grid;
-        grid-template-rows: repeat(4, 1fr);
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-      }
-      /* displaying the explations of the sections to the right */
-      .text{
-        float: right;
-      }
-      /* styling all my h1's */
-      H1{
-        font-style: italic;
-        font-family: serif;
-        border-bottom: solid black;
-      }
-
-      /* trying to style on the the divs on the right */
-      div  :nth-child(2n) {
-        font-size: 18px;
-      }
-      /* changed background images of my divs */
-      div{
-        background:url("background...jpg");
-        background-size: cover;
-      }
-
-      /* decorating my h1's with some text-decoration */
-      div>h1{
-        text-decoration: overline;
-      }
-      </style>
     </head>
     <body>
         <!-- all of my pages have the same header -->
-      <header class="pageHeader">
-        <center><img src="assets/images/123.png" width="300px" alt="logo"></center>
+      <header class="page_header">
+        <center><img src="images/123.png" width="300px" alt="logo"></center>
       </header>
+      <!-- my nav -->
+      <div class="main_nav">
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+              <a class="dropbtn">Categories</a>
+                  <div class="dropdown-content">
+                <a href="sections.html#hiking" target="_parent">Hiking</a>
+              <a href="sections.html#fishing">Fishinng</a>
+            <a href="sections.html#climbing">Rock climbing</a>
+          <a href="sections.html#camping">Camping</a>
+      </div>
+        </li>
+          <li><a href="gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+              </ul>
+                </nav>
+              </div>
           <!-- wrapper container with all my details in grids -->
       <div class="wrapper">
         <div id="hiking">
@@ -128,6 +108,15 @@
               </ol>
             </div>
           </div>
-          
+          <!-- my footer with contact details and address -->
+              <footer>
+                  <a href="https://en-gb.facebook.com/login/"> <img src="images/download.jpg" alt="facebook"> </a>
+                      <address class="address">
+                          20 Ventnor close <br> Kuilsriver <br>Cape Town <br> 7580
+                      </address>
+                    <div class="website">
+                    <a href="www.outdooradventures.co.za">www.outdooradventures.co.za</a>
+                    </div>
+              </footer>
         </body>
         </html>

@@ -1,15 +1,15 @@
 /* declaring grids for my whole body */
 body{
-  background:url("background.jpg");
+  background:url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav container siteLinks"
+    "main_nav container site_links"
     "footer footer footer";
   grid-template-rows:auto;
-  grid-template-columns:200px auto 400px;
+  grid-template-columns:100px auto 600px;
   grid-gap: 1px;
   margin: 0;
 
@@ -58,7 +58,8 @@ body{
   }
 
   .dropdown:hover .dropdown-content {
-      display: block;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
   }
 
 Footer{
@@ -88,16 +89,16 @@ Footer{
 .container {
   grid-area: container;
   }
-.mainNav {
+.main_nav {
   position: sticky;
   position: fixed;
-  grid-area: nav;
+  grid-area: main_nav;
   }
-.siteLinks {
+.site_links {
   font-size: 17px;
   padding: 1px;
   border: solid #7fcdff;
-  grid-area: siteLinks;
+  grid-area: site_links;
   }
 .container img{
   width: 300px;
@@ -128,21 +129,15 @@ Footer{
      grid-column: 1/2;
      grid-row: 2/3;
 }
-/* Medium devices (landscape tablets, 600px and up) */
-@media only screen and (min-width: 600px) {
-   header,nav,.container,.siteLinks,footer {width: 80%}
+/* MOBILE STYLES FIRST - MOBILE STYLES*/
+        header,figure , footer, section, aside{
+             width: 100%;
+            display: block;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 2px;
 }
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
- header,nav,.container,.siteLinks,footer  { width: 80%}
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-   header,nav,.container,.siteLinks,footer { width: 80%}
-}
-
 
 
 
