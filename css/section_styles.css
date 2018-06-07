@@ -1,15 +1,9 @@
+/* Mobile first styling */
 /* adding a background image to body */
 body{
   background:url("../images/background.jpg");
   background-size: cover;
   background-repeat: no-repeat;}
-  /* wrapper container with all my details in grids */
-  .wrapper{
-    display: grid;
-    grid-template-rows: repeat(4, 1fr);
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
-  }
   /* displaying the explanations of the sections to the right */
   .text{
     float: right;
@@ -76,24 +70,42 @@ body{
         display: block;
         text-align: left;
     }
+    Footer{
+     font-family: Verdana, Geneva,serif;
+     font-size: 16px;
+     color: #FFF;
+     background-color: black;
+     padding: 10px;
+     margin: 20px;
+     height: auto;
+     width: 100%;
+
+      }
+      footer img{
+      width: 80px; height: 80px;}
+
+      .address{display:inline-block;
+        margin-left: 100px;}
+
+        .website  {
+                    display:inline-block;
+                  }
+@media screen and (min-width:1000px){
+  /* wrapper container with all my details in grids */
+  .wrapper{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
 
     .dropdown:hover .dropdown-content {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
-  Footer{
-   font-family: Verdana, Geneva,serif;
-   font-size: 16px;
-   color: #FFF;
-   background-color: black;
-   padding: 10px;
-   margin: 20px;
-   height: auto;
-   width: 100%;
-    grid-area: footer;
-    }
-    footer img{
-    width: 80px; height: 80px;}
-    .address{display:inline-block;
-      margin-left: 100px;
+
+    footer{
+        grid-area: footer;
+    }}
