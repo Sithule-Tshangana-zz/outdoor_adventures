@@ -6,81 +6,83 @@
     <link rel="stylesheet" href="css/form_styles.css">
     <!-- linking my responsive media quaries -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
     <title>Contact form</title>
   </head>
   <body>
-    <!-- all of my pages have the same header -->
+    <!--pages header -->
     <header class="page_header">
         <center><img src="images/123.png" width="300px" alt="logo"></center>
     </header>
-    <!-- my nav -->
-    <div class="main_nav">
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li class="dropdown">
-            <a class="dropbtn">Categories</a>
+    <!-- my nav with a drop btn -->
+<div class="main_nav">
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <!-- links to the dropdown menu -->
+            <li class="dropdown">
+                <a class="dropbtn">Categories</a>
                 <div class="dropdown-content">
-              <a href="sections.html#hiking" target="_parent">Hiking</a>
-            <a href="sections.html#fishing">Fishinng</a>
-          <a href="sections.html#climbing">Rock climbing</a>
-        <a href="sections.html#camping">Camping</a>
-    </div>
-      </li>
+                  <a href="sections.html#hiking" target="_parent">Hiking</a>
+                  <a href="sections.html#fishing">Fishinng</a>
+                  <a href="sections.html#climbing">Rock climbing</a>
+                  <a href="sections.html#camping">Camping</a>
+                </div>
+            </li>
         <li><a href="gallery.html" target="_blank">Gallery</a></li>
-          <li><a href="contact_us.html" target="_blank">Contact us</a></li>
-            </ul>
-              </nav>
-            </div>
+        <li><a href="contact_us.html" target="_blank">Contact us</a></li>
+  </ul>
+</nav>
+</div>
     <!-- my container with my contact form -->
 <div class="container">
   <form action="action_page.php">
     <div class="row">
       <div class="col-25">
-        <label for="fname">First Name*</label>
+      <label for="fname">First Name*</label>
       </div>
       <div class="col-75">
-        <input type="text" name="firstname" required placeholder="Your name">
+      <input type="text" name="firstname" required placeholder="Your name">
       </div>
     </div>
     <div class="row">
       <div class="col-25" >
-        <label for="lname">Last Name*</label>
+      <label for="lname">Last Name*</label>
       </div>
       <div class="col-75">
-        <input type="text" name="lastname" required placeholder="Your last name">
+      <input type="text" name="lastname" required placeholder="Your last name">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="email">Email*</label>
+      <label for="email">Email*</label>
       </div>
       <div class="col-75">
-        <input name="text" value="" type="text"  type="email" id="emailAddress" required placeholder="Your email address">
+      <input name="text" value="" type="text"  type="email" id="emailAddress" required placeholder="Your email address">
       </div>
     </div>
     <div class="row">
       <div class="col-25">
-        <label for="country">Category*</label>
+      <label for="country">Category*</label>
       </div>
       <div class="col-75">
         <select name="Category" required placeholder="Please choose">
             <option value=""></option>
-              <option value="Hiking">Hiking</option>
-                <option value="Camping">Camping</option>
-              <option value="Fishing,">Fishing,</option>
+            <option value="Hiking">Hiking</option>
+            <option value="Camping">Camping</option>
+            <option value="Fishing,">Fishing,</option>
             <option value="Rock climbing">Rock climbing</option>
         </select>
       </div>
     </div>
-    <div class="row">
-      <div class="col-25">
-        <label for="subject">Message</label>
-      </div>
-      <div class="col-75">
-        <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
-      </div>
+  <div class="row">
+    <div class="col-25">
+    <label for="subject">Message</label>
     </div>
+    <div class="col-75">
+    <textarea name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
     <div class="row">
       <input type="submit" value="Submit">
     </div>
@@ -89,11 +91,11 @@
       <footer>
           <a href="https://en-gb.facebook.com/login/"> <img src="images/download.jpg" alt="facebook"> </a>
               <address class="address">
-                  20 Ventnor close <br> Kuilsriver <br>Cape Town <br> 7580
+                <P>20 Ventnor close <br> Kuilsriver <br>Cape Town <br> 7580</P>
               </address>
             <div class="website">
-            www.outdooradventures.co.za
+              <a href="www.outdooradventures.co.za">www.outdooradventures.co.za</a>
             </div>
       </footer>
-  </body>
+</body>
 </html>
